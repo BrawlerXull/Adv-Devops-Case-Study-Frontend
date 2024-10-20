@@ -10,7 +10,7 @@ calculatorForm.addEventListener('submit', (e) => {
     const num2Value = parseFloat(num2.value);
     const selectedOperator = operator.value;
 
-    fetch('/webbackend/calculate', {
+    fetch('http://35.154.20.70:5000/calculate', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
